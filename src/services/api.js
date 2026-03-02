@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-// ✅ Local + Production Auto Switch
+// ✅ Local + Production Auto Switch (UPDATED)
 const API_URL =
   process.env.NODE_ENV === "production"
-    ? "/api"
+    ? "https://lms-backend-mocha-two.vercel.app/api"
     : "http://localhost:5001/api";
 
 const api = axios.create({
